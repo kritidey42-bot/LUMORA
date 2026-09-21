@@ -1,0 +1,149 @@
+.navbar {
+  width: 100%;
+  background: #f7f5f0;
+  border-bottom: 1px solid #dedbd3;
+}
+
+.navbar-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 22px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.navbar-logo {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: #171717;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.navbar-logo:hover {
+  opacity: 0.55;
+}
+
+/* =========================
+   MAIN NAVIGATION
+========================= */
+
+.navbar-links {
+  display: flex;
+  gap: 32px;
+}
+
+.navbar-links a {
+  position: relative;
+  color: #171717;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.navbar-links a:hover {
+  opacity: 0.5;
+}
+
+/* =========================
+   RIGHT ACTIONS
+========================= */
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-actions a {
+  color: #171717;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.navbar-actions a:hover {
+  opacity: 0.5;
+}
+
+/* =========================
+   SEARCH
+========================= */
+
+.navbar-search {
+  cursor: pointer;
+}
+
+/* =========================
+   WISHLIST
+========================= */
+
+.wishlist-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+/* =========================
+   BAG
+========================= */
+
+.bag-link {
+  color: #171717;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.bag-link:hover {
+  opacity: 0.5;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.navbar-actions button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+  .navbar-inner {
+    padding: 18px 20px;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-actions {
+    gap: 14px;
+  }
+
+  .navbar-actions a {
+    font-size: 13px;
+  }
+
+  .navbar-logo {
+    font-size: 19px;
+    letter-spacing: 3px;
+  }
+}
